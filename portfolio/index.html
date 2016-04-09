@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="css/main.css">
+	<!--Use Normalize.css because it makes browsers render all elements more consistently
+	and in line with modern standards. It precisely targets only the styles that need normalizing.-->
+	<link rel="stylesheet" href="http://normalize-css.googlecode.com/svn/trunk/normalize.css/">
+	<!--Use Lato font Light 300-->
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+	<!--Viewport tag gives the browser instructions on how to control the page's
+	dimensions and scaling.-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<div class="grid">
+		<!--This row includes the owner's logo, name and site subtitle.-->
+		<header class="row">
+			<div class="col-3">
+				<img class="logo" src="logoskull.png" alt="cute skull logo">
+			</div>
+			<div class="col-9">
+				<div class="name">
+					<h1>Candice Pascual</h1>
+					<h5>Got Mad Skulls</h5>
+				</div>
+			</div>
+		</header>
+		<!--This row includes the main picture representing the website.-->
+		<figure class="row">
+			<div class="col-12">
+				<img class="main-pic" src="main.png" alt="Main Site Picture">
+			</div>
+		</figure>
+
+		<div class="row">
+			<div class="featured">
+				<h2>Featured Sites</h2>
+			</div>
+		</div>
+		<!--This row includes the 3 projects highlighted in my portfolio. Depending on the viewport size, the row will scale to fit only one project for small screen, two for medium and three for larger screens. -->
+		<main class="row">
+		<!--The first div (Project 1) currently showcases one of my favorite websites but will, in the future, show
+		a website which I developed. -->
+			<div class="project">
+				<img class="screenshot" src="http://placeskull.com/450px/350px/FFCC00/28" alt="Project 1">
+				<h3 class="project details">Tastefully Offensive</h3>
+				<a class="address" href="http://www.tastefullyoffensive.com/">http://www.tastefullyoffensive.com</a>
+			</div>
+		<!--The second div (Project 2) currently showcases another of my favorite websites but will, in the future, show a website which I developed. -->
+			<div class="project">
+				<img class="screenshot"src="http://placeskull.com/450/350/33CC33/6" alt="Project 2">
+				<h3 class="project-details">Pleated Jeans</h3>
+				<a class="address" href="http://www.pleated-jeans.com/">http://www.pleated-jeans.com/</a>
+			</div>
+		<!--This div (Project 3) currently showcases the site from which I got my placeholders but will, in the future, show
+		a website which I developed. -->
+			<div class="project">
+				<img class="screenshot"src="http://placeskull.com/450/350/CC0066/34" alt="Project 3">
+				<h3 class="project-details">PlaceSkull</h3>
+				<a class="address" href="http://www.placeskull.com/">http://www.placeskull.com/</a>
+			</div>
+		</main>
+	</div>
+</body>
+</html>

@@ -1,0 +1,269 @@
+div,
+figure,
+header,
+main {
+	-webkit-box-sizing: border-box;
+	-mod-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: "Open Sans", sans-serif;
+}
+
+a {
+	font-size: 14px;
+}
+
+/*Decreases margins from default in
+order to better space elements.*/
+h1 {
+	margin: 0;
+}
+
+h2 {
+	margin-bottom: 0;
+}
+
+h3 {
+	margin: 2px 0 2px 0;
+}
+
+/*The negative margin-top allows the
+subtitle to sit a little closer to my name.*/
+h5 {
+	margin: 0;
+	font-size: 20px;
+}
+
+img,
+embed,
+object,
+video {
+	max-width: 100%;
+}
+
+.logo {
+	border-radius: 90px;
+	padding: 0;
+	width: 100%;
+	max-width: 100px;
+	float: left;
+}
+
+.project-details {
+	width: 100%;
+	padding: 5px;
+	text-align: center;
+}
+
+.main-pic {
+	padding: 5px 0 0 0;
+	width: 100%;
+	float: right;
+}
+
+.address {
+	width: 100%;
+	max-width: 550px;
+	max-height: 90px;
+	min-height: 50px;
+	margin-top: 10px;
+	text-align: center;
+	word-wrap: break-word;
+}
+
+.project {
+	width: 33.33%;
+	padding: 10px;
+	overflow: hidden;
+	min-width: 200px;
+	text-align: center;
+	padding: 10px;
+	overflow: auto;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.screenshot {
+	width: 100%;
+	padding: 10px;
+	overflow: auto;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	justify-content: center;
+}
+
+.name {
+	width: 100%;
+	padding: 10px;
+	overflow: auto;
+	text-align: right;
+	float: right;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: block;
+	-webkit-flex-flow: row wrap;
+	justify-content: flex-end;
+}
+
+.row {
+	display:flex;
+	margin: 0;
+	flex-wrap:wrap;
+	-webkit-flex-flow: row wrap;
+	justify-content: center;
+}
+
+.col-1 {
+	width: 8.33%;
+}
+
+.col-2 {
+	width: 16.66%;
+}
+
+.col-3 {
+	width: 25%;
+	padding: 10px;
+	overflow: auto;
+}
+
+.col-4 {
+	width: 33.33%;
+}
+
+.col-5 {
+	width: 41.66%;
+}
+
+.col-6 {
+	width: 50%;
+}
+
+.col-7 {
+	width: 58.33%;
+}
+
+.col-8 {
+	width: 66.66%;
+}
+
+.col-9 {
+	width: 75%;
+	padding: 10px;
+	overflow: auto;
+	text-align: right;
+	float: right;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	justify-content: flex-end;
+}
+
+.col-10 {
+	width: 83.33%;
+}
+
+.col-11 {
+	width: 91.66%;
+}
+
+.col-12 {
+	width: 100%;
+	padding: 0 10px 0 10px;
+	overflow: auto;
+	border-top-style: solid;
+	border-color: black;
+}
+
+.featured {
+	width: 100%;
+	padding: 0 10px 0 10px;
+	overflow: auto;
+}
+
+/*Laptops will show the 3 projects side
+by side on their large screens.*/
+@media all and (max-width: 950px) {
+	.project {
+		width: 32%;
+		max-width: 550px;
+		min-width: 200px;
+		padding: 0;
+	}
+	.screenshot {
+		max-height: 350px;
+	}
+}
+
+/*Tablets will allow only two pictures
+per row so pictures can be an
+attractive size.*/
+@media all and (max-width: 725px) {
+	.project {
+		width: 50%;
+		min-width: 200px;
+		padding: 0;
+	}
+	.screenshot {
+		max-height: 250px;
+	}
+}
+
+/*As screen size increases the number of
+projects per row increases to 2 and the height
+of the screenshot is constrained to avoid
+an unattractive tall, skinny image.*/
+@media all and (max-width: 550px) {
+	.project {
+		width: 50%;
+		min-width: 160px;
+		padding: 10px;
+	}
+	.screenshot {
+		max-height: 200px;
+	}
+	.col-9 {
+		width: 60%;
+		-webkit-flex-flow: row wrap;
+		justify-content: flex-end;
+	}
+	.col-3 {
+		width: 40%;
+	}
+}
+
+/*Phones will see one project per row
+to accommodate the small screen.
+Image height is constrained to
+ensure attractive proportions.*/
+@media all and (max-width: 400px) {
+	.project {
+		width:100%;
+		min-width: 165px;
+		padding: 0;
+	}
+	.screenshot {
+		max-height: 200px;
+	}
+	.col-9 {
+		width:50%;
+		-webkit-flex-flow: row wrap;
+		justify-content: flex-end;
+	}
+	.col-3 {
+		width: 50%;
+	}
+}
